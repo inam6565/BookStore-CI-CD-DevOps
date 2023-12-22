@@ -1,0 +1,19 @@
+{
+  "name": "mern-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inam6565/BookStore-CI-CD-DevOps.git"
+  },
+  "author": "Inam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/inam6565/BookStore-CI-CD-DevOps/issues"
+  },
+  "homepage": "https://github.com/inam6565/BookStore-CI-CD-DevOps#readme"
+}

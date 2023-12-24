@@ -9,7 +9,8 @@ function App() {
 
   return (
     <>
-      <div>Hello! I am building book store using MERN Stack</div>
+      {/* <div>Hello! I am building book store using MERN Stack</div> */}
+      <nav>Site Logo</nav>
       <Outlet/>
     </>
   )

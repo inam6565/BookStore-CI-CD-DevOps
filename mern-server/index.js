@@ -43,11 +43,11 @@ async function run() {
     })
 
     //Get all books from database
-    app.get("/all-books", async(req, res) => {
+    /* app.get("/all-books", async(req, res) => {
         const books = bookCollection.find();
         const result = await books.toArray();
         res.send(result);
-    })
+    }) */
 
     //update a book data : patch and update methods
     app.patch("/book/:id", async(req,res) => {
@@ -72,6 +72,16 @@ async function run() {
       const filter = {_id: new ObjectId(id)};
       const result = await bookCollection.deleteOne(filter);
       res.send(result);
+  })
+
+  //Search by category
+  app.get("/all-books", async(req, res) => {
+    let query = {};
+    if(req.query?.category){
+      query = {category: req.query.category}
+    }
+    const result = await bookCollection.find(query).toArray();
+    res.send(result);
   })
 
     // Send a ping to confirm a successful connection

@@ -1,12 +1,16 @@
 import React from 'react'
 import Banner from '../components/Banner'
-import FavouriteBooks from './FavouriteBooks'
+import BestSellerBooks from './BestSellerBooks'
+import FavBooks from './FavBooks'
+import PromoBanner from './PromoBanner'
 
 const Home = () => {
   return (
     <div className=''>
       <Banner/>
-      <FavouriteBooks/>
+      <BestSellerBooks/>
+      <FavBooks/>
+      <PromoBanner/>
     </div>
   )
 }

@@ -6,6 +6,7 @@ import PromoBanner from './PromoBanner'
 import OtherBooks from './OtherBooks'
 import Review from './Review'
 
+
 const Home = () => {
   return (
     <div className=''>
